@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BlackCenk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Fatih GÖÇER">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <link rel="stylesheet" href="assets/toast-message/beautyToast.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="icon" type="image/x-icon" href="assets/img/logonew.png">
+
+  <script src="assets/toast-message/beautyToast.js"></script>
+</head>
+
+<body>
+
+  <div id="toast"></div>
+
+  <div class="popup">
+    <div class="popcard">
+      <h1 style="color: red;">Lorem ipsum</h1>
+      <p style="color: black;">Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+      </p>
+    </div>
+  </div>
+  
+  
+
+
+  <!-- notification for small viewports and landscape oriented smartphones -->
+  <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <img src="assets/img/logonew.png" alt="BlackCenk">
+      <p>BlackCenk</p>
+    </a>
+    <!-- <p class="device-notification--message">Global has so much to offer that we must request you orient your device to
+      portrait or find a larger screen. You won't be disappointed.</p> -->
+  </div>
+
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="#0">
+              <img src="assets/img/logonew.png" alt="BlackCenk" style="border: 0 !important;">
+              <p style="text-transform: unset !important;">BlackCenk</p>
+            </a>
+            <button class="header--cta cta">Hire Us</button>
+            <!-- <div class="header--nav-toggle">
+            <span></span>
+          </div> -->
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>Deck</span></li>
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content">
+            <li class="l-section section section--is-active">
+
+              <div class="row" data-scroll-index='0' id="cardBody">
+                <div id="index-gallery" style="margin-left: 10px; margin-top: 15%; margin-left: 15%;">
+                  <div class="item">
+                    <img onclick="cardClick(2)" src="assets/2_of_spades.png" alt="" id="image2" />
+                    <p id="2"></p>
+                  </div>
+
+                  <div class="item">
+                    <img onclick="cardClick(3)" src="assets/3_of_spades.png" alt="" id="image3" />
+                    <p id="3"></p>
+                  </div>
+
+                  <div class="item">
+                    <img onclick="cardClick(4)" src="assets/4_of_spades.png" alt="" id="image4" />
+                    <p id="4"></p>
+                  </div>
+
+                  <div class="item">
+                    <img onclick="cardClick(5)" src="assets/5_of_spades.png" alt="" id="image5" />
+                    <p id="5"></p>
+                  </div>
+
+                  <div class="item">
+                    <img onclick="cardClick(6)" src="assets/6_of_spades.png" alt="" id="image6" />
+                    <p id="6"></p>
+                  </div>
+
+                  <div class="item">
+                    <img onclick="cardClick(7)" src="assets/7_of_spades.png" alt="" id="image7" />
+                    <p id="7"></p>
+                  </div>
+
+                  <div class="item">
+                    <img onclick="cardClick(8)" src="assets/8_of_spades.png" alt="" id="image8" />
+                    <p id="8"></p>
+                  </div>
+
+                  <div class="item">
+                    <img onclick="cardClick(9)" src="assets/9_of_spades.png" alt="" id="image9" />
+                    <p id="9"></p>
+                  </div>
+
+                  <div style="margin-left: 17%;">
+                    <div class="item">
+                      <img onclick="cardClick(10)" src="assets/10_of_spades.png" alt="" id="image10" />
+                      <p id="10"></p>
+                    </div>
+
+                    <div class="item">
+                      <img onclick="cardClick(11)" src="assets/jack_of_spades2.png" alt="" id="image11" />
+                      <p id="11"></p>
+                    </div>
+
+                    <div class="item">
+                      <img onclick="cardClick(12)" src="assets/queen_of_spades2.png" alt="" id="image12" />
+                      <p id="12"></p>
+                    </div>
+
+                    <div class="item">
+                      <img onclick="cardClick(13)" src="assets/king_of_spades2.png" alt="" id="image13" />
+                      <p id="13"></p>
+                    </div>
+
+                    <div class="item">
+                      <img onclick="cardClick(14)" src="assets/ace_of_spades.png" alt="" id="image14" />
+
+                      <p id="14"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+
+              <div class="grid">
+                <!-- ************ 1. CARD ************ -->
+                <div class="card" style="height: 50%; width: 25%;">
+                  <span class="icon" style="font-size: xxx-large; color: black;">
+                    &#9824;
+                  </span>
+                  <h4>Count <p id="masaDegeri"></p>
+                  </h4>
+                  <br>
+                  <p id="masaDegeri"></p>
+                  <div class="shine"></div>
+                  <div class="background">
+                    <div class="tiles">
+                      <div class="tile tile-1"></div>
+                      <div class="tile tile-2"></div>
+                      <div class="tile tile-3"></div>
+                      <div class="tile tile-4"></div>
+
+                      <div class="tile tile-5"></div>
+                      <div class="tile tile-6"></div>
+                      <div class="tile tile-7"></div>
+                      <div class="tile tile-8"></div>
+
+                      <div class="tile tile-9"></div>
+                      <div class="tile tile-10"></div>
+                    </div>
+
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                  </div>
+                </div>
+
+                <!-- ************ 2. CARD ************ -->
+                <div class="card" style="height: 50%; width: 25%;">
+                  <span class="icon" style="font-size: xxx-large; color: black;">
+                    &#9827;
+                    <!-- &#9830; KARO-->
+                    <!-- &#9827; SİNEK -->
+
+                  </span>
+                  <h4>10 Possibilities</h4>
+                  <p id="onOlasilik"></p>
+                  <br>
+                  <div class="shine"></div>
+                  <div class="background">
+                    <div class="tiles">
+                      <div class="tile tile-1"></div>
+                      <div class="tile tile-2"></div>
+                      <div class="tile tile-3"></div>
+                      <div class="tile tile-4"></div>
+
+                      <div class="tile tile-5"></div>
+                      <div class="tile tile-6"></div>
+                      <div class="tile tile-7"></div>
+                      <div class="tile tile-8"></div>
+
+                      <div class="tile tile-9"></div>
+                      <div class="tile tile-10"></div>
+                    </div>
+
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                  </div>
+                </div>
+
+                <!-- ************ 3. CARD ************ -->
+                <div class="card" style="height: 50%; width: 25%;">
+                  <span class="icon" style="font-size: xxx-large; color: red;">
+                    &hearts;
+                    <!-- &#9830; KARO-->
+                    <!-- &#9827; SİNEK -->
+
+                  </span>
+                  <h4 id="kalanKartSayisi"></h4>
+                  <p id="harcananKartSayisi" style="font-size: 12px !important;"></p>
+                  <br> 
+                  <div class="shine"></div>
+                  <div class="background">
+                    <div class="tiles">
+                      <div class="tile tile-1"></div>
+                      <div class="tile tile-2"></div>
+                      <div class="tile tile-3"></div>
+                      <div class="tile tile-4"></div>
+
+                      <div class="tile tile-5"></div>
+                      <div class="tile tile-6"></div>
+                      <div class="tile tile-7"></div>
+                      <div class="tile tile-8"></div>
+
+                      <div class="tile tile-9"></div>
+                      <div class="tile tile-10"></div>
+                    </div>
+
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                  </div>
+                </div>
+
+                
+
+                <div id="container">
+                  <div class="cardFour" id="clickable" style="cursor: unset !important;">
+                    <!-- ************ 4. CARD ************ -->
+                    <span class="icon" style="font-size: xxx-large; color: red;">
+                      &#9830;
+                      <!-- &#9830; KARO-->
+                      <!-- &#9827; SİNEK -->
+
+                    </span>
+                    <h1 style="margin-right: 50% !important; float: right;" id="percentageOfBatmaOlasiligi"></h1>
+                    <h4>Probability of Losing</h4>
+                    <form class="work-request" style="width: 85% !important;">
+
+                      <div class="work-request--information">
+                        <div class="information-name">
+                          <input id="name" type="text" spellcheck="false">
+                          <label for="name">1st Card</label>
+                        </div>
+                        <div class="information-email">
+                          <input id="email" type="email" spellcheck="false">
+                          <label for="email">2nd Card</label>
+                        </div>
+                      </div>
+
+
+
+
+                    </form>
+
+
+
+                    <div class="shine"></div>
+                    <div class="background">
+                      <div class="tiles">
+                        <div class="tile tile-1"></div>
+                        <div class="tile tile-2"></div>
+                        <div class="tile tile-3"></div>
+                        <div class="tile tile-4"></div>
+
+                        <div class="tile tile-5"></div>
+                        <div class="tile tile-6"></div>
+                        <div class="tile tile-7"></div>
+                        <div class="tile tile-8"></div>
+
+                        <div class="tile tile-9"></div>
+                        <div class="tile tile-10"></div>
+                      </div>
+
+                      <div class="line line-1"></div>
+                      <div class="line line-2"></div>
+                      <div class="line line-3"></div>
+                    </div>
+                  </div>
+
+                  <!-- <div id="hidden">
+                    <div class="card">
+                      <span class="icon" style="font-size: xxx-large; color: red;">
+                        &#9830;
+    
+                      </span>
+                      <h4>Batma Olasılığı</h4>
+                      <p>
+                        Standard chunk of Lorem Ipsum used since the 1500s is showed below
+                        for those interested.
+                      </p>
+                      <div class="shine"></div>
+                      <div class="background">
+                        <div class="tiles">
+                          <div class="tile tile-1"></div>
+                          <div class="tile tile-2"></div>
+                          <div class="tile tile-3"></div>
+                          <div class="tile tile-4"></div>
+                  
+                          <div class="tile tile-5"></div>
+                          <div class="tile tile-6"></div>
+                          <div class="tile tile-7"></div>
+                          <div class="tile tile-8"></div>
+                  
+                          <div class="tile tile-9"></div>
+                          <div class="tile tile-10"></div>
+                        </div>
+                  
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+
+              </div>
+
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+</body>
+
+</html>
